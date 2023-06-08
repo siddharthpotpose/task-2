@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormArray, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import Swal from 'sweetalert2';
 
 @Component({
@@ -23,6 +24,7 @@ export class AppComponent implements OnInit {
       emailId: ['', [Validators.required, Validators.email]]
 
     });
+
   }
 
 
@@ -38,11 +40,8 @@ export class AppComponent implements OnInit {
 
 console.log(this.formData.value)
 this.usersData.push(this.formData.value);
-
+this.formData.reset()
   }
-
-
-
 
   onSaveMembers() {
 

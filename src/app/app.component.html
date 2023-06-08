@@ -7,24 +7,21 @@
           <input type="text" name="fullName" class="form-control" formControlName="fullName"
             placeholder="Enter Your Full Name">
           <small class="text-danger" *ngIf="!formData.get('fullName')?.valid && formData.get('fullName')?.touched">Enter
-            Your
-            Full Name*</small>
+            Your Full Name*</small>
         </div>
         <div>
           <label for="mobileNo" class="form-label text-light">Mobile No:</label>
           <input type="number" name="mobileNo" class="form-control" formControlName="mobileNo"
             placeholder="Enter Your Mobile Number">
           <small class="text-danger" *ngIf="!formData.get('mobileNo')?.valid && formData.get('mobileNo')?.touched">Enter
-            Your
-            Valid Mobile no.*</small>
+            You Valid Mobile no.*</small>
         </div>
         <div>
           <label for="emailId" class="form-label text-light">Email ID:</label>
           <input type="email" name="emailId" class="form-control" required formControlName="emailId"
             placeholder="Enter Your Valid Email Id">
           <small class="text-danger" *ngIf="!formData.get('emailId')?.valid && formData.get('emailId')?.touched">Enter
-            Your
-            Email Id*</small>
+            Your Email Id*</small>
         </div>
 
         <div>
@@ -44,7 +41,7 @@
     <div class="col-lg-12 col-md-6 table-responsive">
       <table class="table table-danger table-hover">
         <thead>
-          <tr >
+          <tr>
             <th scope="col">#</th>
             <th scope="col">Full Name</th>
             <th scope="col">Mobile Number</th>
